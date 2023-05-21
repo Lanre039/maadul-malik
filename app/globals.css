@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Sora:wght@200;400;500;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +16,12 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html {
+  font-family: "Sora";
+  /* font-family: var(--font-sora); */
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +31,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+  scroll-behavior: smooth;
+}
+
+.nav {
+  @apply bg-primary  p-0 m-0 border-b-[#CFC3B361] border-b border-solid;
 }

@@ -1,113 +1,198 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Ribbon from "@/public/ribbon.svg";
+import Ribbon2 from "@/public/ribbon2.svg";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <main className="bg-primary">
+      <div className="mx-auto max-w-[1300px] pt-10 px-4">
+        <p className="bg-[#2C5364] px-5 py-3 rounded-[11px] text-white text-[14px] font-light">
+          For enquiries and clarifications, contact us on{" "}
+          <strong>+23497342972</strong>
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      </div>
+      <section className="mx-auto items-center w-full  md:max-w-[1300px] py-10 md:py-16 px-4">
+        <div className="font-secondary">
+          <h1 className="text-[25px] font-secondary md:text-[50px] leading-10 md:leading-[74px] text-[#F5F5F5]">
+            {"MA'ADUL"} MALIK SCHOOL <br /> FOR {"QUR'AN"}
+            <br /> MEMORIZATION AND <br />
+            ISLAMIC STUDIES
+          </h1>
+          <div className="relative w-full mt-10">
+            <div className="bg-white">
+              <Link
+                href="https://forms.gle/xaJsJBKddLtK4yWk6"
+                target="_blank"
+                rel="noopener noreferrer"
+                // type="button"
+                className="absolute bottom-[5px] left-[-6px] h-[72px] w-[150px] md:w-[200px]  text-white flex justify-center items-center bg-[#914629] border border-solid border-[#000000] z-10 "
+              >
+                REGISTER
+              </Link>
+            </div>
+            <div className="h-[72px] w-[150px] md:w-[200px]  bg-[#914629] border border-solid border-[#000000]" />
+          </div>
         </div>
-      </div>
+        <div className="flex gap-8 mb-5"></div>
+      </section>
+      <section className="bg-white">
+        <div className="max-w-[1200px] mx-auto ">
+          <div
+            id="about"
+            className="px-8 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 pt-10"
+          >
+            <div className="text-left">
+              <h1 className="text-[22px] leading-[74px] text-[#2C5364]">
+                ABOUT US
+              </h1>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+              <p className="font-extralight text-[15px] leading-6 text-[#0D2D32]">
+                We are dedicated to teaching quality {"Qur'an"} & Islamic
+                knowledges enhanced by advanced methods. <br /> <br />
+                Our Online madrasah is an online solution where your child can
+                learn from the comfort of their own home, on their desktop,
+                laptop or even smartphone.
+              </p>
+            </div>
+            <div className="text-left">
+              <h1 className="text-[22px] leading-[74px] text-[#2C5364]">
+                OUR MISSION
+              </h1>
+              <p className="font-extralight text-[15px] leading-6 text-[#0D2D32]">
+                Our Mission is to provide high quality {"QUR'AN"} & ISLAMIC
+                education and childcare in a safe, respectful and inclusive
+                environment that builds a foundation for life-long learning.
+              </p>
+            </div>
+          </div>
+          <div className="px-8 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
+            <div className="text-left">
+              <h1 className="text-[22px] leading-[74px] text-[#2C5364]">
+                OUR VISION
+              </h1>
+              <p className="font-extralight text-[15px] leading-6 text-[#0D2D32]">
+                Our vision is to develop well rounded, confident and responsible
+                individuals who aspire to achieve their full potential. We will
+                do this by providing a welcoming, happy, safe, and supportive
+                learning environment in which everyone is equal and all
+                achievements are celebrated.
+              </p>
+            </div>
+            <div className="text-left">
+              <h1 className="text-[26px] leading-[74px] text-[#2C5364]">
+                WHY JOIN US
+              </h1>
+              <p className="font-extralight text-[15px] leading-6 text-[#0D2D32]">
+                At our madrasah, we have many unique features that will allow
+                your child(ren) to maximize their efforts and make full benefit
+                from their time. Our unique features include; professional
+                tutors for both physical and online classes, serine environment
+                for the physical class and lots more.
+              </p>
+            </div>
+          </div>
+          <div
+            id="programmes"
+            className="relative p-10 text-white bg-[#203A43] mt-16"
+          >
+            <h1 className="text-xl leading-6 text-white mb-10">
+              OUR PROGRAMMES
+            </h1>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+            <div className="relative z-30">
+              <p className="font-normal text-[15px] leading-6 mb-5">
+                1. Guaranteed Hifz ({"Qur'an"} memorization with proper
+                monitoring).
+              </p>
+              <p className="font-normal text-[15px] leading-6 mb-5">
+                2. Arabic Language for beginners, intermediates, and advanced
+                students.
+              </p>
+              <p className="font-normal text-[15px] leading-6 mb-5">
+                3. Memorization of Motion (Concise Islamic Texts).
+              </p>
+              <p className="font-normal text-[15px] leading-6 mb-5">
+                4. Memorization of {"QUR'AN"} with riwayaat (Different styles of
+                recitation).
+              </p>
+              <p className="font-normal text-[15px] leading-6 mb-5">
+                5. Tajweed course for beginners, intermediates, and advanced
+                students.
+              </p>
+              <p className="font-normal text-[15px] leading-6 mb-5">
+                6. How to recite the {"QUR'AN"} with the use of Tajweed.
+              </p>
+            </div>
+            <Image
+              src={Ribbon2}
+              alt="ribbon"
+              className="absolute bottom-0 right-0 opacity-25"
+            />
+          </div>
+          <div id="classes" className="text-left mt-16  px-5 ">
+            <h1 className="text-[22px] leading-[54px] text-[#2C5364]">
+              SCHEDULE
+            </h1>
+            <p className="font-extralight text-[15px] text-[#0D2D32]">
+              We offer both online and physical classes
+            </p>
+            <div className="gap-16 mt-10 w-full max-w-[1000px] grid grid-cols-1 md:grid-cols-2">
+              <div className="relative">
+                <div className="w-full h-[285px] bg-[#2C5364] border border-[#203A43]" />
+                <div className="absolute w-full bottom-0 right-0  mr-[8px]">
+                  <div className="relative  h-[285px] mb-[8px] bg-[#fff] border-[1px] border-[#203A43] p-6">
+                    <h4 className="mb-3">
+                      Online class: Scheduled based on number of days
+                    </h4>
+                    <p className="mb-3">• 5 days per week (Maximum)</p>
+                    <p className="mb-3">• 4 days per week</p>
+                    <p className="mb-3">• 3 days per week (Minimum)</p>
+                    <Image
+                      src={Ribbon}
+                      alt="ribbon"
+                      className="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="w-full h-[285px] bg-[#2C5364] border border-[#203A43]" />
+                <div className="absolute  w-full bottom-0 right-0  mr-[8px]">
+                  <div className="relative h-[285px] mb-[8px] bg-[#fff] border-[1px] border-[#203A43] p-6">
+                    <h4 className="mb-3">
+                      Physical class: Takes place 5 times, a week
+                    </h4>
+                    <p className="mb-3">• Saturdays</p>
+                    <p className="mb-3">• Sundays</p>
+                    <p className="mb-3">• Mondays</p>
+                    <p className="mb-3">• Tuesdays</p>
+                    <p className="mb-3">• Wednesdays</p>
+                    <Image
+                      src={Ribbon}
+                      alt="ribbon"
+                      className="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-left md:w-9/12 mt-20 mb-28 px-5">
+            <p className="text-[#2C5364]">
+              As spaces are limited, we advice you to enroll now to avoid
+              disappointment. <br /> If you have any problem enrolling online,
+              please contact us on +23497342972
+            </p>
+            <p className="text-[#2C5364] mt-[15px]">
+              We give our students the time and focus that they need to be
+              proficient in reading and reciting from memory with our teacher to
+              student ratio.
+            </p>
+          </div>
+        </div>
+        <div className="h-[30px] bg-[#2C5364] " />
+      </section>
     </main>
-  )
+  );
 }
