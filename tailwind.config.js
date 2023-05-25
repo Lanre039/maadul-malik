@@ -20,6 +20,9 @@ module.exports = {
       backgroundColor: {
         primary: "#0D2D32",
       },
+      borderRadius: {
+        extraLarge: "12rem",
+      },
     },
   },
   plugins: [],

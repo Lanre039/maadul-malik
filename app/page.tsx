@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Logo from "@/public/logo.jpeg";
 import Ribbon from "@/public/ribbon.svg";
 import Ribbon2 from "@/public/ribbon2.svg";
 import Link from "next/link";
@@ -13,25 +14,34 @@ export default function Home() {
         </p>
       </div>
       <section className="mx-auto items-center w-full  md:max-w-[1300px] py-10 md:py-16 px-4">
-        <div className="font-secondary">
-          <h1 className="text-[25px] font-secondary md:text-[50px] leading-10 md:leading-[74px] text-[#F5F5F5]">
-            {"MA'ADUL"} MALIK SCHOOL <br /> FOR {"QUR'AN"}
-            <br /> MEMORIZATION AND <br />
-            ISLAMIC STUDIES
-          </h1>
-          <div className="relative w-full mt-10">
-            <div className="bg-white">
-              <Link
-                href="https://forms.gle/xaJsJBKddLtK4yWk6"
-                target="_blank"
-                rel="noopener noreferrer"
-                // type="button"
-                className="absolute bottom-[5px] left-[-6px] h-[72px] w-[150px] md:w-[200px]  text-white flex justify-center items-center bg-[#914629] border border-solid border-[#000000] z-10 "
-              >
-                REGISTER
-              </Link>
+        <div className="font-secondary flex ">
+          <div>
+            <h1 className="text-[25px] font-secondary md:text-[50px] leading-10 md:leading-[74px] text-[#F5F5F5]">
+              {"MA'ADUL"} MALIK SCHOOL <br /> FOR {"QUR'AN"}
+              <br /> MEMORIZATION AND <br />
+              ISLAMIC STUDIES
+            </h1>
+            <div className="relative w-full mt-10">
+              <div className="bg-white">
+                <Link
+                  href="https://forms.gle/xaJsJBKddLtK4yWk6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  // type="button"
+                  className="absolute bottom-[5px] left-[-6px] h-[72px] w-[150px] md:w-[200px]  text-white flex justify-center items-center bg-[#914629] border border-solid border-[#000000] z-10 "
+                >
+                  REGISTER
+                </Link>
+              </div>
+              <div className="h-[72px] w-[150px] md:w-[200px]  bg-[#914629] border border-solid border-[#000000]" />
             </div>
-            <div className="h-[72px] w-[150px] md:w-[200px]  bg-[#914629] border border-solid border-[#000000]" />
+          </div>
+          <div className="ml-20 p-5 glass-effect rounded-xl max-h-[500px] hidden md:block">
+            <Image
+              src={Logo}
+              alt="logo"
+              className=" border border-gray-100 shadow-sm w-[300px] h-full object-center"
+            />
           </div>
         </div>
         <div className="flex gap-8 mb-5"></div>
@@ -110,7 +120,7 @@ export default function Home() {
                 students.
               </p>
               <p className="font-normal text-[15px] leading-6 mb-5">
-                3. Memorization of Motion (Concise Islamic Texts).
+                3. Memorization of Mutool (Concise Islamic Texts).
               </p>
               <p className="font-normal text-[15px] leading-6 mb-5">
                 4. Memorization of {"QUR'AN"} with riwayaat (Different styles of

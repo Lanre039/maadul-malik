@@ -3,13 +3,18 @@ import { createRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Menu from "@/public/mobile.svg";
+import Logo from "@/public/logo.jpeg";
 
 export default function Navbar() {
   return (
     <nav className="nav  ">
       <div className="px-4 py-6 max-w-full md:max-w-[1300px] mx-auto  flex justify-between items-center text-white ">
         <Link href="/" className="text-[15px]" ref={createRef()}>
-          Home
+          <Image
+            src={Logo}
+            alt="logo"
+            className=" rounded-full border border-gray-100 shadow-sm w-[30px] h-[30px] object-center"
+          />
         </Link>
         <div
           // id="menu"
