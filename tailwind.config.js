@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // primary: ["var(--font-sora)"],
-        // secondary: ["var(--font-bungee)"],
-        secondary: "Bungee Inline",
+        primary: ["var(--font-sora)"],
+        secondary: ["var(--font-bungee)"],
+        // secondary: "Bungee Inline",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

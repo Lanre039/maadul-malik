@@ -24,7 +24,8 @@ export default function Home() {
             <div className="relative w-full mt-10">
               <div className="bg-white">
                 <Link
-                  href="https://forms.gle/xaJsJBKddLtK4yWk6"
+                  // href="https://forms.gle/xaJsJBKddLtK4yWk6"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdXeoyoE3cEAHgv66qeL4191Mt_rGmRuEAsNROmLDvuWMC0UA/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
                   // type="button"
@@ -178,6 +179,8 @@ export default function Home() {
                     <p className="mb-3">• Mondays</p>
                     <p className="mb-3">• Tuesdays</p>
                     <p className="mb-3">• Wednesdays</p>
+                    <p className="mb-3">• Full and weekend boarding</p>
+
                     <Image
                       src={Ribbon}
                       alt="ribbon"

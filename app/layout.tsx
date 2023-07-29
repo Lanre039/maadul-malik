@@ -1,17 +1,17 @@
 import Navbar from "@/components/nav";
 import "./globals.css";
-// import { Sora, Bungee_Inline } from "next/font/google";
+import { Sora, Bungee_Inline } from "next/font/google";
 
-// const sora = Sora({
-//   subsets: ["latin"],
-//   variable: "--font-sora",
-//   // display: "swap",
-// });
-// const bungleInline = Bungee_Inline({
-//   weight: "400",
-//   subsets: ["latin"],
-//   variable: "--font-bungee",
-// });
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sora",
+  // display: "swap",
+});
+const bungleInline = Bungee_Inline({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bungee",
+});
 
 export const metadata = {
   title: "MA'ADUL MALIK",
@@ -26,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <body className={`${sora.className}`}>{children}</body> */}
-      <body>
+      <body
+        className={`${bungleInline.variable} ${sora.variable} ${sora.className}`}
+      >
         <Navbar />
         {children}
       </body>
