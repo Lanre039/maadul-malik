@@ -134,6 +134,10 @@ export default function Home() {
               <p className="font-normal text-[15px] leading-6 mb-5">
                 6. How to recite the {"QUR'AN"} with the use of Tajweed.
               </p>
+              <p className="font-normal text-[15px] leading-6 mb-5">
+                7. English language, Mathematics and Programming (for boarding
+                students only)
+              </p>
             </div>
             <Image
               src={Ribbon2}
@@ -148,7 +152,8 @@ export default function Home() {
             <p className="font-extralight text-[15px] text-[#0D2D32]">
               We offer both online and physical classes
             </p>
-            <div className="gap-16 mt-10 w-full max-w-[1000px] grid grid-cols-1 md:grid-cols-2">
+            {/* <div className="gap-16 mt-10 w-full max-w-[1000px] grid grid-cols-1 md:grid-cols-2"> */}
+            <div className="gap-10 mt-10 w-full  grid grid-cols-1 md:grid-cols-3">
               <div className="relative">
                 <div className="w-full h-[285px] bg-[#2C5364] border border-[#203A43]" />
                 <div className="absolute w-full bottom-0 right-0  mr-[8px]">
@@ -179,7 +184,23 @@ export default function Home() {
                     <p className="mb-3">• Mondays</p>
                     <p className="mb-3">• Tuesdays</p>
                     <p className="mb-3">• Wednesdays</p>
-                    <p className="mb-3">• Full and weekend boarding</p>
+
+                    <Image
+                      src={Ribbon}
+                      alt="ribbon"
+                      className="absolute bottom-0 right-0"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="w-full h-[285px] bg-[#2C5364] border border-[#203A43]" />
+                <div className="absolute  w-full bottom-0 right-0  mr-[8px]">
+                  <div className="relative h-[285px] mb-[8px] bg-[#fff] border-[1px] border-[#203A43] p-6">
+                    <h4 className="mb-3">Full & weekend boarding programme</h4>
+                    <p className="mb-3">• For children between 10-17 years</p>
+                    <p className="mb-3">• Duration: 2-3 years</p>
+                    <p className="mb-3">• Official language: Arabic</p>
 
                     <Image
                       src={Ribbon}
