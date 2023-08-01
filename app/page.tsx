@@ -98,8 +98,8 @@ export default function Home() {
                 At our madrasah, we have many unique features that will allow
                 your child(ren) to maximize their efforts and make full benefit
                 from their time. Our unique features include; professional
-                tutors for both physical and online classes, serine environment
-                for the physical class and lots more.
+                tutors for both physical and online classes, serene environment
+                for both physical class and boarding program.
               </p>
             </div>
           </div>
